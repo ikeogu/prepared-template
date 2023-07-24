@@ -19,7 +19,6 @@ class Blog extends Model implements HasMedia
 
     protected $fillable = [
         'title',
-        'category_id',
         'body',
         'author',
         'image'
@@ -33,12 +32,6 @@ class Blog extends Model implements HasMedia
             get: fn () => $this->getFirstMedia('image') ?: null
         );
 
-    }
-
-
-    public function category() :BelongsTo
-    {
-        return $this->belongsTo(Category::class);
     }
 
 

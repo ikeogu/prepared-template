@@ -25,7 +25,6 @@ Route::prefix('v1')->group(function(){
         Route::post('login', [AuthController::class, 'login'])->name('login');
     });
 
-    Route::apiResource('blog-category', CategoryController::class);
     Route::apiResource('blog-post', BlogController::class);
 
     Route::group(['middleware' => 'auth:api'], static function() {
