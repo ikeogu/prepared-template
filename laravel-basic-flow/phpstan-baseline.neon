@@ -1,0 +1,121 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Cannot call method delete\\(\\) on App\\\\Models\\\\Category\\|null\\.$#"
+			count: 1
+			path: app/Http/Controllers/Api/CategoryController.php
+
+		-
+			message: "#^Cannot call method update\\(\\) on App\\\\Models\\\\Category\\|null\\.$#"
+			count: 1
+			path: app/Http/Controllers/Api/CategoryController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\Api\\\\CategoryController\\:\\:destroy\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: app/Http/Controllers/Api/CategoryController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\Api\\\\CategoryController\\:\\:show\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: app/Http/Controllers/Api/CategoryController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Requests\\\\CategoryRequest\\:\\:rules\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: app/Http/Requests/CategoryRequest.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Requests\\\\CreateBlogRequest\\:\\:rules\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: app/Http/Requests/CreateBlogRequest.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Requests\\\\LoginRequest\\:\\:rules\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: app/Http/Requests/LoginRequest.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Requests\\\\RegisterRequest\\:\\:rules\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: app/Http/Requests/RegisterRequest.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\BlogResource\\:\\:\\$author\\.$#"
+			count: 1
+			path: app/Http/Resources/BlogResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\BlogResource\\:\\:\\$body\\.$#"
+			count: 1
+			path: app/Http/Resources/BlogResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\BlogResource\\:\\:\\$category\\.$#"
+			count: 2
+			path: app/Http/Resources/BlogResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\BlogResource\\:\\:\\$id\\.$#"
+			count: 1
+			path: app/Http/Resources/BlogResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\BlogResource\\:\\:\\$title\\.$#"
+			count: 1
+			path: app/Http/Resources/BlogResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\CategoryResource\\:\\:\\$blogs\\.$#"
+			count: 1
+			path: app/Http/Resources/CategoryResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\CategoryResource\\:\\:\\$description\\.$#"
+			count: 1
+			path: app/Http/Resources/CategoryResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\CategoryResource\\:\\:\\$id\\.$#"
+			count: 1
+			path: app/Http/Resources/CategoryResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\CategoryResource\\:\\:\\$title\\.$#"
+			count: 1
+			path: app/Http/Resources/CategoryResource.php
+
+		-
+			message: "#^Access to an undefined property object\\:\\:\\$user\\.$#"
+			count: 2
+			path: app/Listeners/WelcomeListner.php
+
+		-
+			message: "#^Method App\\\\Models\\\\Blog\\:\\:category\\(\\) return type with generic class Illuminate\\\\Database\\\\Eloquent\\\\Relations\\\\BelongsTo does not specify its types\\: TRelatedModel, TChildModel$#"
+			count: 1
+			path: app/Models/Blog.php
+
+		-
+			message: "#^Method App\\\\Models\\\\Category\\:\\:blogs\\(\\) return type with generic class Illuminate\\\\Database\\\\Eloquent\\\\Relations\\\\HasMany does not specify its types\\: TRelatedModel$#"
+			count: 1
+			path: app/Models/Category.php
+
+		-
+			message: "#^Access to an undefined property object\\:\\:\\$name\\.$#"
+			count: 1
+			path: app/Notifications/NewBlogNotification.php
+
+		-
+			message: "#^Class App\\\\Events\\\\BlogCreatedEvent not found\\.$#"
+			count: 1
+			path: app/Providers/EventServiceProvider.php
+
+		-
+			message: "#^Class App\\\\Listeners\\\\BlogCreatedListner not found\\.$#"
+			count: 1
+			path: app/Providers/EventServiceProvider.php
+
+		-
+			message: "#^Property App\\\\Providers\\\\EventServiceProvider\\:\\:\\$listen \\(array\\<class\\-string, array\\<int, class\\-string\\>\\>\\) does not accept default value of type array\\<string, array\\<int, string\\>\\>\\.$#"
+			count: 1
+			path: app/Providers/EventServiceProvider.php
